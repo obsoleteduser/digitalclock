@@ -13,48 +13,57 @@
     src: url(./assets/fonts/Digital7-1e1Z.ttf);
 }
 
+body{
+    background: url(./assets/images/wallpaperflare.com_wallpaper.jpg) no-repeat;
+    background-position: cover;
+}
+
 .overlay{
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(0,0,0, .3);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
 }
 .clock{
     position: absolute;
     width: 35rem;
     height: 23rem;
-    background-color: black;
     border-radius: 5px;
+    background: url(./assets/images/4037079.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     align-items: center ;
     color: white;
+    box-shadow: 10px 10px 20px black;
 }
 .display{
     width: 25rem;
-    height: 5rem;
+    height: 10rem;
     font-family: digital;
     color: white;
     background-color: #03396c;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 5rem;
     transition: all 1000ms linear;
 }
 
 
 h2{
-
-  text-transform: uppercase;  
+    color: black;
+    border: 1px solid black;
+  padding: .3rem 1rem;
+  text-transform: uppercase;
+  border-radius: 100px;
+ 
 }
 
 .switch{
@@ -69,7 +78,8 @@ h2{
     color: white;
     position: relative;
     cursor: pointer;
-    top: 1rem;
+  
+    border: transparent;
 }
 
 .switch:active{
@@ -78,7 +88,7 @@ h2{
 }
 
 .animation{
-    background-color: #f4b6c2;
-    color: black;
+    background-color:  #1e1f26;
+    color: #ffe9dc;
     transition: all 1000ms linear;
 }
