@@ -54,6 +54,7 @@ body{
     align-items: center;
     font-size: 5rem;
     transition: all 1000ms linear;
+    border-radius: 3px;
 }
 
 
@@ -88,7 +89,7 @@ h2{
 }
 
 .animation{
-    background-color:  #283655;
-    color: #ffe9dc;
+    background-color:  black;
+    color: white;
     transition: all 1000ms linear;
 }
