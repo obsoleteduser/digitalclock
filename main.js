@@ -20,7 +20,7 @@ const setMode = () => {
 
 switcher.addEventListener('click', () => {
     state.mode = state.mode === 'date' ? 'clock' : 'date'
-    console.log(state.mode)
+    display.classList.toggle('animation')
 })
 
 
