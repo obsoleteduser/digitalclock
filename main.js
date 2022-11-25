@@ -14,7 +14,7 @@ const render = (data, element) => {
     element.innerHTML = data
 }
 
-const setMode = () => {
+const setMode = (render) => {
     state.mode === 'clock' ? render(showTime(), display) : render(showDate(), display)
 }
 
@@ -24,4 +24,4 @@ switcher.addEventListener('click', () => {
 })
 
 
-setInterval(() => { setMode() }, 100)
+setInterval(() => { setMode(render) }, 100)
