@@ -10,12 +10,12 @@ function showDate() {
     return `${new Date().getDay() + "/" + new Date().getMonth() + "/" + new Date().getUTCFullYear()}`
 }
 
-const render = (data) => {
-    display.innerHTML = data
+const render = (data, element) => {
+    element.innerHTML = data
 }
 
 const setMode = () => {
-    state.mode === 'clock' ? render(showTime()) : render(showDate())
+    state.mode === 'clock' ? render(showTime(), display) : render(showDate(), display)
 }
 
 switcher.addEventListener('click', () => {
